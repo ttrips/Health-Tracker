@@ -4,12 +4,11 @@
 //  Copy this file to config.php and update your credentials
 // ============================================================
 
-define('DB_HOST', 'localhost');
-define('DB_USER', 'root');        // your MySQL username
-define('DB_PASS', 'abhideep');            // your MySQL password
-define('DB_NAME', 'health_tracker');
-define('APP_NAME', 'Health Tracker');
-define('APP_URL', 'sss-production-ead0.up.railway.app);
+define('DB_HOST', getenv('MYSQLHOST')     ?: 'localhost');
+define('DB_USER', getenv('MYSQLUSER')     ?: 'root');
+define('DB_PASS', getenv('MYSQLPASSWORD') ?: '');
+define('DB_NAME', getenv('MYSQLDATABASE') ?: 'health_tracker');
+define('APP_URL', getenv('APP_URL')       ?: 'http://localhost/health-tracker');
 
 // Session lifetime (seconds)
 define('SESSION_LIFETIME', 3600);
