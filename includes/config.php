@@ -9,7 +9,7 @@ define('DB_USER', 'root');        // your MySQL username
 define('DB_PASS', 'abhideep');            // your MySQL password
 define('DB_NAME', 'health_tracker');
 define('APP_NAME', 'Health Tracker');
-define('APP_URL', 'http://localhost/health-tracker|http://localhost:8000');
+define('APP_URL', 'sss-production-ead0.up.railway.app);
 
 // Session lifetime (seconds)
 define('SESSION_LIFETIME', 3600);
