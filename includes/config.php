@@ -8,7 +8,7 @@ define('DB_HOST', getenv('MYSQLHOST')     ?: 'localhost');
 define('DB_USER', getenv('MYSQLUSER')     ?: 'root');
 define('DB_PASS', getenv('MYSQLPASSWORD') ?: '');
 define('DB_NAME', getenv('MYSQLDATABASE') ?: 'health_tracker');
-define('APP_URL', getenv('APP_URL')       ?: 'http://localhost/health-tracker');
+define('APP_URL', getenv('APP_URL') ?: 'https://sss-production-ead0.up.railway.app');
 
 // Session lifetime (seconds)
 define('SESSION_LIFETIME', 3600);
